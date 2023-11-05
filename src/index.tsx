@@ -20,3 +20,12 @@ const Quotes = NativeModules.Quotes
 export function multiply(a: number, b: number): Promise<number> {
   return Quotes.multiply(a, b);
 }
+
+export function generateVietnamQuote(): Promise<string> {
+  return Quotes.generateVietnamQuote();
+}
+
+// english quote
+export function generateEnglishQuote(): Promise<string> {
+  return Quotes.generateEnglishQuote();
+}

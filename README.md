@@ -11,11 +11,15 @@ npm install react-native-quotes
 ## Usage
 
 ```js
-import { multiply } from 'react-native-quotes';
+import {
+  generateEnglishQuote,
+  generateVietnamQuote,
+} from 'react-native-quotes';
 
 // ...
 
-const result = await multiply(3, 7);
+const vietnam = await generateVietnamQuote();
+const english = await generateEnglishQuote();
 ```
 
 ## Contributing
